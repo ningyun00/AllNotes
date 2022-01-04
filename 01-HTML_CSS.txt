@@ -1,0 +1,386 @@
+01-HTML·CSS
+
+星期四, 2021年12月2日
+下午 04:20
+
+HTML·CSS
+第一课时：10月25日
+<!Doctype html>html5
+<html> 网页
+<head> 头部
+<meta cherset = "utf-8"/>
+<body bgcolor=”背景颜色” background=”背景图片”> 主体
+bgcolor=”背景颜色”
+ background=”背景图片”
+<title> 网页标题
+<strong> 字体加粗
+<em>斜体
+font段落
+<font color = “颜色”size = "1~7"face = "字体"> 段落------size大小
+<h1 align = "位置"><h6>文本标题------align排列
+left左
+center中
+right右
+ <img src=”路径” width=”宽” height=”高” title=”鼠标悬浮提示”alt=”图片加载失败提示文字”/>图片导入
+<p align=””> 段落
+<br/>换行
+<hr width=”宽” size=”1~7” color=”颜色” align=”l，c，f”/>水平线
+&nbsp 空格
+&lt 左尖括号
+&gt 右尖括号
+&copy 版权符
+
+
+
+第二课时10月26日
+网站，网页：
+<a href = "www.baidu.com">百度一下</a>网站
+<a href = "路径"></a>
+
+锚点链接：
+<a href = "#名字"></a>本页跳转
+<a name = "名字"></a>跳转至此处
+<a href = "#"></a>置顶
+
+有序排列：<ol>
+<ol type = "1"start = "起始值">
+<li>_</li>内容
+</ol>
+
+无序排列：<ul>
+<ul type = "disc实心circle空心square方形">
+<li>_<li>内容
+</ul>
+
+自定义：<dl>
+<dl>
+<dt>_</dt>主类容
+<dd>_</dd>副内容
+</dl>
+
+
+
+第三课时10月27日
+<table>
+	<tr>
+		<td></td>
+	</tr>
+ </table>
+border=
+"边框"
+ borderColor=
+"边框颜色
+ cellspacing=
+"单元格与单元格间距"
+ cellpadding=
+"单元格与内容间距" 
+ width=
+"宽" 
+ height=
+"高"
+ align=
+"水平位置"
+ bgcolor=
+"背景颜色"
+ background=
+"背景图片"
+colspan="跨列"横排
+rowspan="跨行"竖排
+valign="top|middle|bottom"
+--垂直排列（上|中|下）
+表格的标题：<caption></caption>
+列标题：<th></th>
+表头：<thead></thead>
+表体：<tbody></tbody>
+表尾：<tfoot></tfoot>
+
+
+
+第四课时10月28日
+
+<form action="" method="get/post">
+＜形式  行动＝"" 方法     ＝" 拿/职位 ">
+
+文本框：
+<input type ="text" name=""value="初始值"size="大小"
+<输入  类型＝" 本文 " 命名＝""价值＝" 初始值 " 大小＝"大小 "
+maxlength="最大输入长度"/>
+
+密码框：
+<input type="password" name=""value="初始值"size="大小"maxlength="最大输入长度"/>
+＜输入  类型＝" 密码 " 命名＝"" 价值＝ " 初始值 " 大小＝ " 大小" maxlength ＝ " 最大输入长度”|>
+
+文件选择框：
+<input type="file" name=""size="大小"/>
+＜输入类型＝" 文件 " 命名＝"" 大小＝ "大小”|>
+
+隐藏框：
+<input type="hidden" name=""value="初始值"/>
+＜输入  类型＝" 隐藏的 " 名字＝"" 评价＝ " 初始值”|>
+
+数字选择框：
+<input type="number" name=""value="初始值"min=""max=""/>
+＜输入  类型＝" 数字 "    命名＝"" 最大＝ ""|>
+
+日期时间：
+<input type="  date / time / datetime-local" name=""value="初始值格式"/>
+＜输入  类型＝" 日期│时间│datetime －地方 " 名字＝"" 评价＝ " 初始值格式”|>
+
+单选框：
+<input type=  "radio" name="一组单选框name名相同"
+＜输入  类型＝" 收音机 " 名字＝" 一组单选框名字名相同 "
+value="提交值"checked//默认选中/>显示文本
+
+多选框：
+<input type="checkbox" name="一组多选框name名相同"
+＜输入  类型＝" 检验盒 " 名字＝" 一组多选框名字名相同 "
+value="提交值"checked//默认选中/>显示文本
+
+下拉选择框：
+<select name=""><option value="提交值">显示文本</option></select>
+＜选择   名字＝""><选项      评价＝" 提交值 "> 显示文本＜ |选项＞．．．．．＜|选择＞
+
+设置下拉选择框默认选中：
+给  option 加 selected 的属性
+给   选项    加   选择了  的属性
+
+文本域：
+<textarea name="" rows="行" cols="列"></textarea>
+＜文本区域 命名＝"" 排＝" 行 " 关口＝" 列 "><|textarea＞
+
+按钮：
+<input type="submit" value="显示文本"/>提交
+＜输入  类型＝" 委托 " 价值＝"显示文本”|> 提交
+
+<input type="reset" value="显示文本"/>重置
+＜输入 类型＝" 重新设定 " 评价＝"显示文本”|> 重置
+
+<input type="button" value="显示文本" onclick="提示"/>网页提示
+＜输入  类型＝" 钮扣 " 价值＝" 显示文本 " onclick＝"提示”|> 网页提示
+<input type="image" src="" onclick=""/>
+＜输入类型＝" 图像 " src＝"" onclick ＝ ""|>
+
+</form>
+＜|形式＞
+
+
+
+
+
+
+第五课时10月29日
+readonly:只读     --会被提交 ，只能用于输入框
+disabled:失效     --不会被提交，适用于所有
+autofocus:自动获焦
+placeholder:提示文本
+required:必填
+  <iframe src="路径" width="" height="" align="left | center | right"
+	scrolling="auto/yes/no"
+	frameborder="0|1">
+</iframe>
+<a href="目标" target="位置">热点</a>
+   目标：
+     1.网页跳转
+        href="www.baidu.com"
+        href="1.html"
+     2.锚点链接
+        ① <img name="aa"|id="aa"/>
+        ② href="#aa"
+
+     3.空链接  --作用置顶
+        href="#"
+
+     4.邮箱链接
+        href="mailto:邮箱名"
+
+  target：只有在href是网页间跳转才有意义
+     target="_self"   --自身（默认值）
+     target="_blank"  --新窗口
+     target="_parent" --父窗口
+     target="_top"    --祖宗窗口
+     target="指定位置"
+
+
+
+
+第六课时：11月01日
+<style type="text/css">
+     标签选择器：
+    P{} h1~h6{} 
+    类选择器：
+    class=”类名“
+    .类名{}
+   id选择器：
+    #id{}
+</style>
+属性：
+text-align:lift、center、right
+color:颜色
+font-size:字号
+backgrond-color:背景颜色
+font-family:字体
+text-decoration:none无下划线/underline有下划线
+line-height:20px
+text-indent:20px;//首行缩进
+letter-spacing:20px;//字符的间距
+white-space:nowrap;//强制文本不换行
+
+
+
+
+第七课时：11月02日
+大多数的标签都可以使用悬浮时：
+点击前a:link{}
+点击后a:visited{}
+悬浮时a:hover{}
+点击时a:active{}
+      background-color:red; //背景颜色
+      background-image:url(路径);//背景图片
+      background-size:宽px 高px;     //背景图片的大小
+      background-repeat:    //是否平铺
+          repeat ： 平铺
+          no-repeat: 不平铺
+          repeat-x:  横向平铺 6 4 
+          repeat-y:  纵向平铺
+
+
+
+
+第八课时：11月03日
+<div></div>:块级标签（占整行）
+css：
+  width:200px;
+  height:200px;
+  float:    浮动属性
+  none:不浮动
+  left: 往左浮动
+  right:往右浮动
+float:能让块级标签变成行级标签
+margin：0px auto;
+
+
+
+第九课时：11月04日
+浮动属性：
+  float:left|right|none
+清除浮动：清除上一个元素浮动对自身的影响
+  clear:left|right|both
+盒子属性：
+  边框：border
+  内边距：padding
+  外边框：margin
+100px+2px+50px+30px
+一个盒子在网页所占的位置：宽/高+内边距+边框+外边距
+边框：
+ border-width:1px;  边框的宽度
+ border-color:red;  边框的颜色
+ border-style:solid|dashed|double|dotted   边框的样式
+      solid:实线
+      dashed:虚线
+      double:双线
+      dotted:点线
+ 简写：border:style width color;
+ 单独设置某一边的边框：
+    上边框：border-top:style width color;
+    下边框：border-bottom:style width color;
+    左边框：border-left:style width color;
+    右边框：border-right:style width color;
+内边距：边框和内容之间的距离
+  padding-top:10px
+  padding-bottom:10px
+  padding-left:10px
+  padding-right:10px
+  注意：设置的内边距会影响盒子的宽/高，内边距不能设置负数
+  简写：
+    padding:10px;  //上下左右都是10px
+    padding:10px 15px 20px 30px; //上 右 下 左
+    padding:10px 15px; //上下10px 左右15px
+    padding:10px 15px 20px; //上 右  下 左没有了参考右
+外边距：margin
+  margin-top:10px
+  margin-bottom:10px
+  margin-left:10px
+  margin-right:10px
+  注意：设置的外边距不会影响盒子的宽/高，外边距能设置负数
+  简写：
+    margin:10px;  //上下左右都是10px
+    margin:10px 15px 20px 30px; //上 右 下 左
+    margin:10px 15px; //上下10px 左右15px
+    margin:10px 15px 20px; //上 右  下 左没有了参考右
+外边距特殊的用法：
+  可以用来水平居中：margin:0px auto;
+
+
+
+第十课时：11月05日
+position:
+   static: 默认值，没有定位
+   absolute:绝对定位 参考点：document(网页文档)
+   relative:相对定位 参考点：原本自身的位置
+   fixed:固定定位 参考点：浏览器窗口
+设置的定位之后，搭配left、top、right、bottom做位置的调整
+溢出属性：
+overflow:hidden/scroll
+   hidden: 内容溢出部分隐藏
+   scroll: 内容溢出自动加滚动条
+
+
+
+第十一课时：11月06日
+移动
+transform:translate(x,y);
+缩放比例
+transform: scale(x,y);
+旋转
+transform: rotate(角度);
+改变旋转中心点
+transform-origin:0% 0%;
+倾斜
+transform: skew(30deg,50deg);
+过渡
+transition-property:all;
+过渡时间
+transition-duration:2s;
+延长时间
+transition-delay:1s;
+时间曲线
+transition-timing-function:linear/ease/ease-in/easr-out/;
+                                           原速/慢快慢/慢开始/慢结束
+简写
+transition: all 2s linear 0s
+阴影
+box-shadow: 0px 2px 10px 0px;
+                      X    Y  模糊度 阴影大小
+
+
+
+第十二课时：11月10日
+渐变色背景颜色
+background:linear-gradient(方向top|bottom|left|right,颜色值可以多个);
+隐藏属性
+visibility: hidden|visible;  占位隐藏
+display:none|block|inline;   不占位隐藏·
+筛选选择器：
+div p:nth-child(n)   在div中找第几个p标签
+透明度
+opacity:0.0~1.0;  
+0：表示完全透明
+1：表示完全不透明
+
+
+第十三课时：11月11日
+声明一个动画
+ @keyframes aaa
+关键帧
+0%~100%
+指定动画名
+animation-name:aaa;
+指定动画时长
+animation-duration:2s;
+动画延时时间
+animation-delay:0s;
+动画播放次数
+animation-iteration-count:n/infinite;
+                                        自定/无线
+简写
+animation: aaa 2s 0s infinite;

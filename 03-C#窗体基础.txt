@@ -1,0 +1,391 @@
+03-C#
+
+2021年11月19日
+11:42
+
+C#：
+Main：方法
+    static---静态的。static  void  Main(string[ ] args){ }
+    void ---无返回的。static  int    Main(string[ ] args){ }
+    Main---主要的。static  void  Main( ){  }
+    string---字符串。static  int    Main( ){  }
+数据类型的区别：
+ java的数据类型：int char String  double boolean  float
+    c#的数据类型：int char string  double bool     float
+输出：
+         Console.WriteLine();
+输入：
+         数据类型 Z = 数据类型.Rarse(Console.ReadLine());--c#的数据类型：int char string  double bool     float
+         --Console.ReadLine()输入
+         int 赋值 = tosinge();
+if(){}else{}
+转换：
+        int Z = Convert.ToInt32(值);
+        float Z = Convert.ToSingle(值);
+        double Z = Convert.ToSingle(值)；
+        string Z = X.ToString(值);
+随机数:
+        Random Z = new Randow();
+foreach：
+Foreach(数据类型 变量名 in 数组名){Console.write(变量名)}
+二维数组：
+        Int[,] b = new int[3,5] 表示有15个数据
+替换:
+       Z = Z. Replac("替换值","要替换的值");
+       
+数组对象：
+      方法 [] 名称 = new 方法[长度]:创建数组对象      
+运用：
+      名称.名称1 = new 方法();
+      
+获取系统时间：
+获取系统当前时间 Datetime dt = datetime.Now
+获取年：dt.Year
+获取月：dt.Month
+获取日：dt.Days
+获取小时：dt.Hours
+获取分钟：dt.Minute
+获取秒：dt.Second
+转成字符串： string s = dt.toString(“yyyy年MM月dd日”)
+yy 年        MM 月        dd 日
+ww 周(一年中的第几周)    dw 星期几
+hh 小时      m分钟     ss 秒 
+获取字符串长度：
+字符串的长度  字符串.Length;
+字符串：
+转大写 字符串.toUpper();
+转小写 字符串.toLower();
+比较内容   
+字符串.equals(字符串)
+字符串==字符串
+字符串.indexOf(“字符串”)
+查找最后一个元素的下标 
+          字符串.lastIndexOf(“字符串”)
+字符串的截取    
+          字符串.substring(开始下标,截取的总长度)
+字符串的拆分   
+          split(拆分的字符)
+字符串的连接    
+          join(连接的字符,需要连接起来的数组) 
+格式化字符串	
+          string.format();
+
+窗体应用程序：
+属性：
+BackColor:背景颜色
+BackgroundImage：背景图片
+BackgroundImageLayout：背景布局
+None：以原图的方式显示
+Tilt：平铺
+Stretch:将图片进行拉伸和窗体一样大
+Center：居中
+Zoom：将其针对垂直方向拉伸
+FormBorderStyle:边框的样式
+None：没有边框
+FixedSIngle:细边框
+Fixed3D:细3D边框
+Sizable：正常的(带最小化最大化和关闭按钮)
+FixedToolWindow：只有关闭按钮(细边框)
+SizableToolWindow：只有关闭按钮(正常边框)
+MaximizeBox:最大化
+默认 true(显示最大化按钮)
+   False(关闭最大化按钮)
+MinimizeBox:最小化
+默认 true(显示最小化按钮)
+   False(关闭最小化按钮)
+Icon：图标属性(标题栏上的图案)
+Text：文字属性(标题栏上的文字)Font：字体
+TopMost = true 窗体显示在最顶层
+ShowInTashbar：是否显示在任务栏
+True:显示在任务栏
+False:不显示在任务栏
+Size：窗体的大小
+StartPosition: 	CenterScreen  窗体第一次出现的位置在屏幕中央
+WindowState : 窗体的初始状态
+     Normal : 正常
+     Max……: 最大化
+     Min……: 最小化
+事件：
+Load---加载事件
+Click---点击事件
+Form--窗体   button--按钮
+Form_load----窗体的加载事件
+Form_click--窗体的点击事件
+Button_click---按钮的点击事件
+This---当前窗体
+This.button---窗体中的按钮
+控件：
+TextBox---文本框
+默认是单行
+Muitiline：true(将其改为多行)
+Password.... : 将其改为 *  
+Lable---标签(显示信息)
+checkBox--复选框
+默认选中(checked)
+Button--按钮
+
+窗体的跳转
+需要跳转的窗体名称  mx = new 需要跳转的窗体名称();
+Mx.show() //显示窗体
+This.hide();//将当前窗体隐藏
+This.close();//将其当前窗体给关闭，没有退出程序
+Application.Exit()//退出应用程序
+应用程序  退出：
+Application.ExitThread();//结束所有程序
+Application.ExitRestart();//重启应用程序
+MessageBox.Show(“是否要退出”);//简单的消息框
+DialogResult ab =  MessageBox.Show(显示的内容,消息框的标题,消息框的按钮);
+消息框的按钮  Mess....Buttons.YesNo   两个按钮(是  否)OKCancel 两个按钮(确定  取消)Ok  只有一个按钮(确定)YesNoCancel 三个按钮(是 否  取消)
+
+添加下拉框内容：
+comboBox.ltems.Add("添加的内容");
+comboBox.ltems.Clear();//清除多余日期
+textBox.Text ==string.Empty//当文本内容为空
+回顾：
+	定时器：timer
+	特殊属性：
+	Inertval:时间间隔
+		默认：毫秒        
+	Enabled 
+		True 运行程序自动启动定时器
+		false运行程序不会自动启动定时器
+   事件：  Tick-----隔一段事件运行的代码
+笔记：
+	ImagleList---图像的集合
+	查看----PictureBox
+	特殊属性： Images:图像的集合
+	图像模糊：colorDeth...:
+	          imageSize：图像的带线啊哦
+	 
+	ListBox
+	添加  
+	this.列表框名字.Items.add(内容)
+	this.列表框名字.Items.addRange(数组)
+	 
+	显示
+	this.列表框名字.text  : 当前选中的内容
+	 
+	选中下一个
+	selectedIndex 当前的下标
+	this.列表框名字.items.count 行数个数
+	 
+ 
+	共享事件
+	多个控件共用同一个事件
+	sender : 事件源(谁点击了，当前按钮就是谁)
+	e : 事件的详细信息
+SelctionMode=FullRowSelect;//单选整行
+dataGridView1.SelectedRows[0]/*列*/.Cells[0].Value.ToString();//获取单行数据
+
+
+
+
+
+
+
+*********************************************************************************************************
+在使用 ADO.NET 进行数据库操作时通常会用到 5 个类，分别是 Connection 类、 Command 类、DataReader 类、DataAdapter 类、DataSet 类。
+我们将以连接 SQL Server 为例介绍 ADO.NET 中的对象，引用的命名空间为 System.Data.SqlClient。
+除了 DataSet 类以外，其他对象的前面都加上 Sql，即 SqlConnection、SqlCommand、SqlDataReader、SqlDataAdapter。
+
+1) Connection 类
+该类主要用于数据库中建立连接和断开连接的操作，并且能通过该类获取当前数据库连接的状态。
+使用 Connection 类根据数据库的连接串能连接任意数据库，例如 SQLServer、Oracle、MySQL 等。
+但是在 .NET 平台下，由于提供了一个 SQL Server 数据库，并额外提供了一些操作菜单便于操作，所以推荐使用 SQLServer 数据库。
+
+2) Command 类
+该类主要对数据库执行增加、删除、修改以及查询的操作。
+通过在 Command 类的对象中传入不同的 SQL 语句，并调用相应的方法来执行 SQL 语句。
+
+3) DataReader 类
+该类用于读取从数据库中查询出来的数据，但在读取数据时仅能向前读不能向后读， 并且不能修改该类对象中的值。
+在与数据库的连接中断时，该类对象中的值也随之被清除。
+
+4) DataAdapter 类
+该类与 DataSet 联用，它主要用于将数据库的结果运送到 DataSet 中保存。
+DataAdapter 可以看作是数据库与 DataSet 的一个桥梁，不仅可以将数据库中的操作结果运送到 DataSet 中，也能将更改后的 DataSet 保存到数据库中。
+
+5) DataSet 类
+该类与 DataReader 类似，都用于存放对数据库查询的结果。
+不同的是，DataSet 类中的值不仅可以重复多次读取，还可以通过更改 DataSet 中的值更改数据库中的值。
+
+此外，DataSet 类中的值在数据库断开连接的情况下依然可以保留原来的值。
+***********************************************************************************************************
+
+
+								
+=============增、删、改==============================
+            //1>.引入Microsoft SQL Server  .NET 数据提供程序 命名空间            
+            using System.Data.SqlClient; 
+             //2、3>.创建数据库的连接对象(数据库连接字符串)
+            SqlConnection sqlconn = new SqlConnection("server = 服务器名称 / 数据库的实例名 ; uid = 登录名 ; pwd = 密码 ; database = 数据库名称");
+            //4>.打开数据库连接
+            sqlconn.Open();
+            //5>.写SQL语句
+            string sql = string.Format("delete/udpate/insert语句","值");
+            //6>.创建命令对象(sql语句,数据库的连接对象)
+            SqlCommand sqlcmd = new SqlCommand(sql,sqlconn);
+            //7>.执行命令:受影响行数返回int类型
+            int count = sqlcmd.ExecuteNonQuery();
+            if (count > 0)
+            {
+                MessageBox.Show("添加/删除/修改成功!");
+            }
+            //8>.关闭数据库连接
+            sqlconn.Close();
+
+================单值查询=============================
+            //1>.引入Microsoft SQL Server  .NET 数据提供程序 命名空间            
+            using System.Data.SqlClient; 
+             //2、3>.创建数据库的连接对象(数据库连接字符串)
+            SqlConnection sqlconn = new SqlConnection("server = 服务器名称 / 数据库的实例名 ; uid = 登录名 ; pwd = 密码 ; database = 数据库名称");
+            //4>.打开数据库连接
+            sqlconn.Open();
+            //5>.写SQL语句(不一样)
+            string sql = string.Format("查询单值的SQL语句");
+            //6>.创建命令对象(sql语句,连接对象)
+            SqlCommand sqlcmd = new SqlCommand(sql,sqlconn);
+            //7>.执行命令:(不一样)查询单值返回object类型
+            object result = sqlcmd.ExecuteScalar();
+	
+            //8>.关闭数据库连接
+            sqlconn.Close();
+
+=========单行查询=============================
+            //1>.导入Microsoft SQL Server  .NET 数据提供程序 命名空间            
+            using System.Data.SqlClient;  
+            //2、3>.创建数据库的连接对象(数据库连接字符串)
+            SqlConnection sqlconn = new SqlConnection("server = 服务器名称 / 数据库的实例名 ; uid = 登录名 ; pwd = 密码 ; database = 数据库名称");
+            //4>.打开数据库连接
+            sqlconn.Open();
+            //5>.写SQL语句(不一样)
+            string sql = string.Format("一行多列的SQL语句");
+            //6>.创建命令对象(sql语句,连接对象)
+            SqlCommand sqlcmd = new SqlCommand(sql,sqlconn);
+            //7>.执行命令:(不一样)查询多行数据返回SqlDataReader阅读器对象
+            SqlDataReader sdr = sqlcmd.ExecuteReader();
+            //循环阅读数据
+           if(sdr.Read())
+           { //判断是否有下一行
+                  sdr["列名1"].ToString(); //取dr中 “列名1”的值
+                   sdr["列名2"].ToString(); //取dr中 “列名2”的值
+                    ......
+           }
+            //8>.关闭数据库连接
+            sqlconn.Close();
+
+------------------------------------------多行查询-------------------------------------
+
+==================多行多列查询(ListView白道)================
+            //1>.导入Microsoft SQL Server  .NET 数据提供程序 命名空间            
+            using System.Data.SqlClient;   
+            //2、3>.建立连接对象(连接字符串)
+            SqlConnection sqlconn = new SqlConnection("server = 服务器名称 / 数据库的实例名 ; uid = 登录名 ; pwd = 密码 ; database = 数据库名称");
+            //4>.打开数据库
+            sqlconn.Open();
+            //5>.写SQL语句(不一样)
+            string sql = string.Format("多行多列的SQL语句");
+            //6>.创建命令对象(sql语句,连接对象)
+            SqlCommand sqlcmd = new SqlCommand(sql,sqlconn);
+            //7>.执行命令:(不一样)查询多行数据返回SqlDataReader阅读器对象
+            SqlDataReader sdr = sqlcmd.ExecuteReader();
+            //循环阅读数据
+            while (sdr.Read())
+            {
+                //用表格控件展示多行多列的数据
+                数据类型 变量名1 = sdr["列名1"];
+                数据类型 变量名2 = sdr["列名2"];
+                ......
+
+                ListViewItem item = new ListViewItem(变量名1);//创建行(必须创建第1行)
+                item.SubItems.Add(变量名2);//创建列2
+                ......
+                this.白道名.Items.Add(item);
+            }
+            //8>.关闭数据库
+            sqlconn.Close();
+
+============多行多列查询(DataGridView黑道)==================
+            //1>.建立连接对象(连接字符串)
+            SqlConnection sqlconn = new SqlConnection("server = 服务器名称 / 数据库的实例名 ; uid = 登录名 ; pwd = 密码 ; database = 数据库名称");
+            //2>.打开数据库
+            sqlconn.Open();
+            //3>.写SQL语句:
+            string sql = string.Format(@"多行多列的SQL语句");
+            //4>.创建数据适配器对象:
+            SqlDataAdapter sda = new SqlDataAdapter(sql, sqlconn);
+            //5>.创建数据集(内存中虚拟的数据库)
+            DataSet ds = new DataSet();
+            //6>.填充数据到数据集中
+            sda.Fill(ds);
+            //7>.指定DataGridView表格控件的数据源
+            this.黑道名.DataSource = ds.Tables[0]; 
+            //8>.关闭数据库
+            sqlconn.Close();
+
+======多行多列查询(ComBoBox下拉列表无间道)================
+            //1>.建立连接对象(连接字符串)
+            SqlConnection sqlconn = new SqlConnection("server = 服务器名称 / 数据库的实例名 ; uid = 登录名 ; pwd = 密码 ; database = 数据库名称");
+            //2>.打开数据库
+            sqlconn.Open();
+            //3>.写SQL语句:
+            string sql = string.Format(@"多行多列的SQL语句");
+            //4>.创建数据适配器对象:
+            SqlDataAdapter sda = new SqlDataAdapter(sql, sqlconn);
+            //5>.创建数据集(内存中虚拟的数据库)
+            DataSet ds = new DataSet();
+            //6>.填充数据到数据集中
+            sda.Fill(ds);
+            //7>.指定ComBoBox控件的数据源
+            this.无间道名.DataSource = ds.Tables[0];
+
+            //8>.指定隐藏列:
+            this.无间道名.ValueMember = "编号列";//获取隐藏值方式：   无间道名.SelectedValue
+            //8>.指定显示列:
+            this.无间道名.DisplayMember = "名称列";//获取显示值方式： 无间道名.SelectedText
+
+            //9>.关闭数据库
+            sqlconn.Close();
+            写成方法:
+ class 类
+    {
+        SqlConnection con;
+        public SqlConnection Con()
+        {//数据库连接
+            con = new SqlConnection("server=.;uid=sa;pwd=123456;database=数据库名称");//连接字符串
+            con.Open();
+            return con;//返回数据库对象
+        }
+        public SqlCommand Com(string sql)
+        {//操作对象
+            SqlCommand com = new SqlCommand(sql, Con());
+            return com;
+        }
+        public int Execute(string sql)
+        {//更新操作
+            return Com(sql).ExecuteNonQuery();
+        }
+        public SqlDataReader read(string sql)
+        {//读取操作
+            return Com(sql).ExecuteReader();
+        }
+        public void DaoClose()
+        {//关闭数据库
+            con.Close();
+        }
+    }
+方法使用:
+                Dao dao = new Dao();
+                string sql = string.Format("sql语句");
+                IDataReader idr = dao.read(sql);
+                if (idr.Read())
+                {
+                    MessageBox.Show("登陆成功", "系统提示");
+                }
+                else
+                {
+                    MessageBox.Show("登陆失败", "系统提示");
+                }
+                dao.DaoClose();
+
+

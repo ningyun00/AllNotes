@@ -1,0 +1,145 @@
+02-SQL Server
+
+星期四, 2021年12月2日
+下午 04:19
+
+SQL SERVER
+Visual Studio 2019 Enterprise
+密钥：BF8Y8-GN2QH-T84XB-QVY3B-RC4DF
+Visual Studio 2019 Professional
+密钥：NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y
+SQL Server:
+安装软件：
+安装Mysql软件进入（http://www.mysql.com)官网下载。
+配置环境：
+将C盘的bin文件导入用户环境变量。
+查看版本：mysql -V 
+    Navicat:永久激活;
+    net start mssqlserver --启动
+    net stop mssqlserver  --停止
+
+第一课时：
+     master   主数据库
+     model    模板数据库
+     msdb     代理数据库
+     tempdb   临时数据库
+    表中的多个
+
+第二课时：
+并且 and或者or非 !字符串必须带 ‘ ’
+规定列名邮箱(mail)地址含有 @ 符号 ，不含就报错
+列名 like ‘%@%’
+数据类型：
+字符数据类型：
+    varchar(长度可变)---效率低，节省内存
+    nchar(固定长度)--效率高，占内存 
+    varchar(50)  nvarchar(50)  ntext text可变长度
+    text------2G
+数字数据类型：int  float  
+货币数据类型：money
+日期数据类型：date(年/月/日)
+    datetime(年/月/日 时:分:秒)
+引用别人的表叫做 外建表 （儿女表）
+被引用的表叫 主键表 （父亲表）
+
+第三课时：
+增加：
+完全增加：
+    insert  into  表名  values(值1,值2,值3,....)
+    default（使用默认值）
+部分增加：
+    insert  into  表名(列名1,列名2,..) values(值1,值2,...)
+删除：
+    delete from 表名 where 删除条件（所有数据）
+    delete from 表名；（无条件全部删除）
+    Truncate table 表名（删除部分记录）
+更改:
+修改
+    update 表名 set 列名=更新值 , 列名=更新值 , ....  where 更新条件
+查询：
+    select * from 表名 where 查询条件；
+为空
+    select * from 表名 where 条件 is null;
+不为空：
+    select * from 表名 where 条件 is not null;
+降序：
+    select * from 表名 ORDER BY 查询内容 DESC;
+升序：
+    select * from 表名 ORDER BY 查询内容;
+第一个有相同的出现，第二个条件升序.
+    select * from 表名 ORDER BY 查询内容; 查询内容 desc;
+
+第四课时：
+新增列：
+    select *,'内容' as '列名' from 表名;
+    convert(要转换的类型,列名)
+排序：
+    select * [指定列名] from 表名 where 条件表达式 order by 列名 [asc | desc], 其它;
+显示多少行：
+    select  top 10  * from 表名;
+按百分比显示多少行：
+    select  top 50 percent  *  from 表名where 条件;
+查询：
+% : 匹配任何长度的任意字符(0~n)
+    select * from 表名 where name like '%N%'  包含N
+    select * from 表名 where name like 'N%'   N开头
+    select * from 表名 where name like '%N'   N结尾
+_ : 匹配一位长度的任意字符
+    select * from 表名 where name like 'N_'   NX
+    select * from 表名 where name like 'N__'  NXX
+[] ：一个[]占一位，可以是[]里面的任意字符
+    select * from 表名 where name like '[A B C]%'  A、B、C;
+[a-z][A-Z][0-9] 
+[^] ：一个[^]占一位,不能是[^]里面的内容
+     select * from 表名 where name like '[^A B C]%'  不是A、B、C;
+取反：
+    select * from 表名 where is not null :不为null
+    select * from 表名 where not between and  不在..之间
+    select * from 表名 where not in( )   不在...之内
+    select * from 表名 where not like    不像
+第五课时：
+函数：
+select  AVG(列名) from 表名;平均分；
+           SUM(列名);总和；
+           MIN(列名);最小值--数字型或字符型；
+           MAX(列名);最大值--数字型或字符型；
+           REPLACE('内容','替换前的字','替换后的字');*
+           LOWER('内容');转换成小写
+           UPPER('内容');转换成大写
+           SUBSTRING('内容',起始值,结束值);截取
+           COUNT(列名);返回行数；
+           COUNT_BIG(列名);返回行数；(2^23-1)在这个范围0
+           LEN(列名);字符数;不包含空格。或DATELENGTH(列名);字节数=内存。
+           RAND();随机数的产生;
+           FLOOR(rand()*值);返回小于或等于表达式的最大整数----向上取整
+           CEILING(rand()*值);返回大于于或等于表达式的最小整数----向下取整
+           GETDATE();时间；精确到毫秒
+           GETUTDATE();国际时间；精确到毫秒
+           CONVENT();时间格式。CONVERT(verchar(长度),getdate(),style)。CONVERT(data_type(length),date_to_be_converted,style);
+           DATEDIFF();计算天数，返回两个日期之间的天数。
+           DATEDIFF(datepart时间类型,startdate开始时间,enddate结束时间);startdate,enddate要是合法时间.day天数,month月份,hour小时数，minute分钟数，
+           DATEADD();时间间隔
+           DATEADD(datepart时间类型,number增加天数,date起始时间);添加日期减去指定日期的时间间隔.
+           DATEPART();返回日期单独部分；返回int型。DATENAME();返回varchar型。day()年，month()月，year()日；
+           CONVERT();统计
+分组:           
+Select top 2(数字) 字段| * | 聚合函数
+from 表名
+where 分组前的条件(简单的条件颜色,姓名,年龄)
+group by 分组字段
+having 分组后的条件筛选(和聚合函数相关的条件)
+order by 排序字段(永远都是在最后的)
+
+连接：
+select * from 表1 inner join 表2 on 表1.公共字段 = 表2.公共字段;内连接
+                            left join;左连接
+                            right join;右连接
+                            full join;全连接
+                            cross join;交叉连接
+                             
+
+
+
+
+
+
