@@ -13,7 +13,6 @@ namespace     //继承于哪个项目
 
         public SqlConnection Con()
         {//连接方法
-            CON = new SqlConnection("server=.;uid=sa;pwd=123456;database=");//数据库名称
             //连接数据库
             CON.Open();
             //打开数据库

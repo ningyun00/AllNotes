@@ -416,8 +416,4 @@ namespace     //继承于哪个项目
                 //返回受影响的行数
             }
 
-   2.          IDataAdapter ida = net.Sda(sql);
-            //申明一个接口、用来提供数据
-            DataSet ds = new DataSet();
-            //接收数据
-            ida.Fill(ds);
+>>>>>>>>> Temporary merge branch 2
