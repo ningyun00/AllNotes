@@ -1,0 +1,287 @@
+Java流程图
+	第一章：程序的入门
+		 jdk的安装 
+			 环境变量的编辑
+				 版本号的查询java -version
+		Java的执行
+			固定框架
+				代码编写，dos执行
+					  符号的使用
+						cls.cd.
+				 框架代码
+					public(公共的) class(类) “类名”{
+					 public(公共的) static(静态的) void(无法返回的) main(主要的) String(字符串类型) args(参数)
+				 输出代码
+					 System(系统) out(输出) println(打印)
+						System.out.println("你好java");
+	第二章：变量与运算符
+		 变量介绍
+			 储存容量介绍
+				  b（字节）1024kb
+				kb（千字节）1024mb
+				 mb（兆字节）1024gb
+				 Gb（吉字节）1024tb
+				Tb(太字节)
+		算数运算符
+			 (先其它后自加)i++。i--。(先自加后其它)++i。--i。
+			 运算符的使用
+				 运算符 “+“，“-”，”*“，“/”。
+				%(模)和+(拼接)
+			 boolean(布尔值)
+				 true(1)
+				 false(0)
+			 关系判断符 
+				 >(大于)
+				 <(小于)
+				>=(大于等于)
+				<=(小于等于)
+				==(等于)
+				!=(不等于)
+		 数据类型
+			数据类型
+				 数值型(float)
+					 整数型“int”
+					小数型“double”
+				 字符型
+					单字符“char”
+					字符串"String"
+			算法规则
+				 算术：“+”加字符型：“+”拼接
+				不能是数字开头不能用java的关键字
+				 命名：驼峰法
+			 工作原理
+				 确定类型
+				 确定变量名
+					 只能由字母、数字、下划线 '_'、$组成
+				 输入值
+					 工作格式“数据类型” “变量名”=“值” 
+	 第三章：数据类型转换与键盘入
+		 数据类型的转换
+			 自动转换(隐)
+				int到Double
+			强制转换(强)
+				double到int
+		 操作流程
+			 导包(scanner)
+			创建对象
+				import
+				java.util.scanner
+			接收数据
+				imput.next()
+			执行(System.out.println)
+	第四章：逻辑关系、运算符、if。
+		 逻辑运算符
+			&&(与)两边为真则为ture，否反
+			 | |(或)有一真都为真
+			 !(非)转换真假值
+			 &(与)一边为真则输出false
+		if语句
+			单句if
+			if---else
+	第五章：多重if的使用
+		三目运算符：表达式？thue：false
+		equals的使用()
+			子主题 1
+		多重else if
+		镶嵌if
+	第六章：switch与猜拳游戏
+		随机数的运用
+			impot   java.util.Random(导包)
+			Random A = new Random(创建对象)
+			随机数的调用范围：int A = nextInt(结束数字)+开始数字;
+		switch
+			case 值：
+			语句————结束词break
+			其它语句default
+	第七章：循环基础---while
+		先初始化变量
+		在执行条件
+			在执行操作
+			初始化条件不满足不会执行
+		特点：先判断，再执行
+	第八章：do...while循环与循环次数不确定
+		do 的格式
+		do 与if 与switch
+			初始化条件不满足至少执行一次
+		特点：先判断，再执行
+	第九章：for循环与两个关键字
+		for的连用
+			for的格式(int A =0;A<=（自定义范围）;A++)
+		break.结束执行
+		continue.跳过执行一句进行下一句
+		三种循环的不同
+	第十章：嵌套循环的使用
+		for，while。for，do，while
+	第十一章：出拳游戏与万年历
+		万年历
+			计算1900年到所输入的年份
+				判断平年和闰年
+			输入要显示的月份
+				判断平年，闰年的二月并自加到输入月份
+			月份天数累加
+				大月和小月
+			判断自己输入的月份是第几个月，有多少天
+				进行表格制作
+		猜拳游戏
+			设定计算机范围
+			人进行范围选择
+			出拳判断，统计结果：
+	第十二章：复习题
+		熟练掌握各种各类型的题目
+	第十三章：数组
+		数组的存储
+			int A[] = new int [（数组长度）];
+			int B = new int []{1，2，3，4...}
+		for循环储存，累加
+			for (int i = 0; i < A.length; i++) {
+		数组的使用规范
+			数组长度固定不变，避免数组越界
+数组中的所有元素必须属于相同的数据类型
+		定义数组A[i]=ning.next();
+	第二十章：字符串
+		引用String数据包
+			创建string对象
+			String A = new String ();
+		1、获取字符串长度：length();
+   无参有返回  参数：无 返回：int  
+			A.length();
+				获取字符串长度
+		2、比较字符串：equals(需要比较的字符串)  --区分大小写   有参有返回   参数：String   返回：boolean
+			A.equals(“相同的值”);
+				比较字符
+		大小写
+			
+3、比较字符串：equalsIgnoreCase() --不区分大小写   有参有返回   参数：String   返回：boolean
+				A.equalslgnoreCase();
+					比较字符，不区分大小写
+			4、小写转换成大写: toUpperCase() 无参有返   返回：String
+				A.toUpperCase();
+					将小写转大写
+			5、大写转换成小写：toLowerCase() 无参有返  返回：String
+				A.toLowerCase();
+					大写转小写
+		查找
+			6、通过字符串查找下标：indexOf()  --从前往后  有参有返回   参数：用法1：String indexOf("需要查找的字符串");   用法2：String int  indexOf("需要查找的字符串",查找的起始位置);   返回: int （下标位置，如果没有找到返回-1）
+				A.indexOf("要查找的值");
+					查找
+				在循环内的下标。A.indexOf(i,i+1);
+					查找范围值
+			7、通过字符串查找下标：lastIndexOf()  --从后往前   有参有返回   参数：用法1：String      lastIndexOf("需要查找的字符串");     用法2：String int  lastIndexOf("需要查找的字符串",查找的起始位置);  返回: int （下标位置，如果没有找到返回-1）
+				A.lestIndexOf("查找的值");
+					倒着查找
+				在循环内A.lastIdexOf(i,i+1);
+					倒着查找范围
+		8、去除两边的空格：trim(); 
+无参有返回 返回： String
+			A.trim();
+				除去空格
+		9、替换字符串: replace()  有参有返  参数:   String,String  返回值：String   使用：String 新的字符串=replace("要替换的字符串","替换后的字符串");
+			A.replace(“要替换的字符串”,“替换后的字符串”);
+				将字符串内的值更该
+		10、切割： split()
+   有参有返回   参数：String    返回：String[]
+			A.split(" ");
+				此处意思是删除内容里的空格
+		11、拼接： concat()   --和 + 一样效果
+    有参有返回    参数：String    返回：String
+			A.conCat(" ");
+				拼接
+		12、截取 substring()     有参有返回    参数：用法1：int        substring(截取的起始位置);          用法2：int int    substring(截取的起始位置,截取的结束位置);--包前不包后    返回：String
+			A.substtring(i);
+				查找指定值
+			A.substring(i,i+1);
+				在循环内查找范围值
+		StringBuffer类
+			StringBuffer st = new StringBuffer (ning.next());
+			toString();
+				st.toString();
+					转换成String类
+			append();
+				st.appeng();
+					连接字符串
+			insert();
+				st.insert();
+					插入字符串
+	第十九章：类的有参方法
+		有参无返
+			格式：public void “命名”（数据类型）{方法体}
+		有参有返
+			格式：public （数据类型） “命名”（数据类型）{方法体 return 返回类型为数据类型;}
+	第十八章：类的无参方法
+		方法
+			方法的定义包含方法的名称、方法返回值的数据类型、方法的主体。
+			多个方法不能相互嵌套定义！
+			方法不能返回多个值！
+			不能在方法外部直接写程序逻辑代码！
+		属性
+			在同一个方法中，不允许有同名局部变量
+在不同的方法中，可以有同名局部变量
+			在同一个类中，成员变量和局部变量同名时，局部变量具有更高的优先级
+			在属性处属于成员变量
+				在方法处属于局部变量
+		无参无返
+			格式：public void（无返）“命名”（无参数）{方法体}
+		无参有返
+			格式：public String（数据类型）“命名”（）{retuern 返回类型自定;}
+	第十七章：类与对象
+		类
+			类是概念模型，定义对象的所有特性和所需的操作，对象是真实的模型，是一个具体的实体。
+			模板
+				public （void“数据类型”）"命名"（参数）{}
+		对象
+			对象具有属性和行为。
+对象具有变化的状态。
+		使用
+			定义属性
+				用String定义
+			定义方法
+				用public void "命名"(){}
+			定义测试类
+				在主方法中调用方法
+	第十六章：数组复习
+	第十五章：二维数组
+		如何定义
+			二维数组范围为【i】*【j】
+			int arr[][] = new int [][];
+			int brr = {{1,2},{3,4}};
+			其它形式一样
+		遍历
+			用嵌套for循环进行
+				//第一个for循环遍历得到每个一维数组的地址值for (int i = 0; i < arr1.length; i++) {
+				注意第二给循环范围要从[i].length开始
+				//第二个for循环遍历得到每一个一维数组的元素for (int j = 0; j < arr1[i].length; j++) {System.out.print(arr1[i][j]+"\t");}}
+		查询
+			定义一个自己所要查询的数
+			在for循环内添加if判断
+				if(arr[i][j]==定义的数据){输出}
+		修改
+			在查找后进行修改
+			将随需要的值赋给arr[i][j]
+		布尔值的使用
+			将开关声明为打开状态
+				boolean 定义字符 = true;
+			判断当定义字符不满足条件进行false跳出
+	第十四章：数组的计算
+		利用标记法经行查找
+		数组的排列
+			插入数到数组中
+				确定输入的值,并确定下标
+					int num  = sc.nextInt();//新增成绩int index =scores.length;//插入的位置
+				元素插入位置
+					循环判断输入的值比原数值大则将i下标赋给新值
+						if(num> scores[i]){index = i;break;}
+				元素后移
+					for (int i = scores.length-1; i >index ; i--) {
+scores[i] = scores[i-1];}
+						下标开始的元素后移一个位置
+				插入数据
+					scores[index] = num;
+					循环输出
+			升序排列
+				import java.util.Arrays;//导包---数组
+				Arrays.sort(scores);//对数组进行升序排列
+				for (int i = 0; i < scores.length; i++) {}//循环范围
+				System.out.print(scores[i]+" ");//输出结果
+			降序排列
+				for (int i = A.length-1; i >= 0; i--) {}//从最大下标减
+				System.out.print(A[i]+“ ” );//输出
